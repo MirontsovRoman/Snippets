@@ -1,8 +1,9 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 
 {% block content %}
 <!-- Begin page content -->
+
 <div class="container">
     <div class="row">
         <div class="col">
@@ -20,7 +21,7 @@
                 Название: <input type="text" value="{{ snippet.name }}" class="form-control">
             </div>
             <div class="col col-4">
-                Дата создания: <input type="text" value="{{ snippet.creation_date }}" class="form-control">
+                Дата создания:<input type="text" value="{{ snippet.creation_date }}" class="form-control">
             </div>
         </div>
         <hr>
@@ -30,10 +31,13 @@
                     <p>
                         "{{ snippet.code }}"
                     </p>
+
                 </div>
+
             </div>
         </div>
         </fieldset>
+
         </div>
     </div>
 </div>
